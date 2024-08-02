@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Apply Poppins font family */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styles pour les boutons et les animations */
+/* Styles pour les boutons et les animations */
+.ripple-btn {
+    background-color: #00324f;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 20px 140px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ripple-btn:hover {
+    background-color: #cc730e;
+    transform: scale(1.05);
+  }
+  
+  .bg-cover {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bg-center {
+    background-position: center;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Ajout de la séparation oblique */
+  .relative .transform {
+    transform: skewX(-12deg);
+  }
+  
+  .relative .origin-bottom-right {
+    transform-origin: bottom right;
+  }
+  
+  .relative .bg-gradient-to-r {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  
+
+  .bg-night-blue {
+    background-image: url('https://img.freepik.com/free-photo/autumn-leaves-composition_23-2151555014.jpg?t=st=1722457751~exp=1722461351~hmac=3115ff923e3aeac3c4a657808de35cff7ad1d00364f2412dd72591657847408b&w=1380');
+    background-size: cover;
+    background-position: center;
+  }
+  /* Ajout de styles personnalisés pour la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+  }
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-background {
+    background: linear-gradient(270deg, #e3a01a, #041f3d, #000e1e);
+    background-size: 600% 600%;
+    animation: gradientBackground 8s ease infinite;
+  }
+  .animate-background {
+    background: linear-gradient(45deg, #dc9d0a, #6a4504, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+ 
+/* styles.css */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #6ee7b7, #3b82f6);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #ffffff;
+}
+/* App.css */
+
+
+h1, h2, h3 {
+  color: #edf2f7; /* Couleur claire pour les titres */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bg-gray-900 {
+  background-color: #1a202c; /* Fond pour les sections */
+}
+
+.text-white {
+  color: #edf2f7; /* Texte blanc */
+}
+
+.text-blue-400 {
+  color: #63b3ed; /* Couleur bleue pour les icônes */
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Coins arrondis */
+}
+
