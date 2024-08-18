@@ -1,5 +1,7 @@
 
 import { Link } from "react-router-dom";
+import siteweb from '../assets/image/siteweb.jpg'
+import uxui from "../assets/image/projetux.jpg";
 const Projects = () => {
   return (
     <section className="py-16 bg-white  ">
@@ -11,7 +13,7 @@ const Projects = () => {
           {/* Section Projets Web */}
           <div className="bg-blue-900 bg-opacity-80 shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/oct/27oct/What-is-UI-UX-Design.jpg"
+              src={siteweb}
               alt="Projets Web"
               className="w-full h-64 object-cover"
             />
@@ -37,7 +39,7 @@ const Projects = () => {
           {/* Section Projets UX/UI */}
           <div className="bg-yellow-600 bg-opacity-80 shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://img.freepik.com/free-vector/gradient-ui-ux-landing-page_52683-69534.jpg?t=st=1722465770~exp=1722469370~hmac=e703e7e9bbc796ddf8a61cd87bf87b5cf3bedb0e1306062a0a2129f157092c08&w=996"
+              src={uxui}
               alt="Projets UX/UI"
               className="w-full h-64 object-cover"
             />

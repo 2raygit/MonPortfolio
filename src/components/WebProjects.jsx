@@ -1,5 +1,9 @@
 import React from 'react';
 import portfolioImage from '../assets/image/portfolio.png';
+import Image1 from "../assets/image/imagew1.png";
+import Image2 from "../assets/image/imagew2.png";
+import Image3 from "../assets/image/imagew3.png";
+import defaultimage from "../assets/image/default.png";
 import { Link } from 'react-router-dom';
 
 const WebProjects = () => {
@@ -7,52 +11,59 @@ const WebProjects = () => {
     {
       id: 1,
       title: "Application de gestion de tâche",
-      description: " Il montre l'utilisation de technologies modernes et une interface utilisateur fluide.",
-      image: "https://s3-alpha.figma.com/hub/file/3258857591/80a53487-a98c-438e-bd34-43b65f3574c3-cover.png"
-     ,lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      description:
+        " Il montre l'utilisation de technologies modernes et une interface utilisateur fluide.",
+      image: Image1,
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 2,
       title: "Application Méteo",
-      description: " Ce projet illustre des compétences avancées en développement web.",
-      image: "https://s3-alpha.figma.com/hub/file/3581851921/resized/800x480/cd8de689-cdd1-4311-bfa6-cedcb23a22bd-cover.png"
-    ,lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      description:
+        " Ce projet illustre des compétences avancées en développement web.",
+      image: Image2,
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 3,
       title: "Application de gestion d'événement",
-      description: " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
-      image: "https://s3-alpha.figma.com/hub/file/3264164744/resized/800x480/081c5663-fb49-463f-a6ad-033a6543cedd-cover.png"
-     ,lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      description:
+        " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
+      image: Image3,
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 4,
       title: "Portfolio personnel",
-      description: " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
+      description:
+        " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
       image: portfolioImage, // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
-     lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 5,
       title: "Projet 5",
-      description: " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
-      image: "", // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
-     lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      description:
+        " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
+      image: defaultimage, // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 6,
       title: "Projet 6",
-      description: " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
-      image: "", // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
-     lien: "https://github.com/2raygit/gestion_de_tache_App.git"
+      description:
+        " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
+      image: defaultimage, // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
     },
     {
       id: 7,
       title: "Projet 7",
-      description: " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
-      image: "", // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
-     lien: "https://github.com/2raygit/gestion_de_tache_App.git"
-    }
+      description:
+        " Un projet qui combine design et fonctionnalité avec des technologies récentes.",
+      image: defaultimage, // Assurez-vous que portfolioImage est défini comme une chaîne de caractères contenant le chemin de l'image
+      lien: "https://github.com/2raygit/gestion_de_tache_App.git",
+    },
   ];
 
   return (

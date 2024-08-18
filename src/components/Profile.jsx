@@ -1,22 +1,23 @@
-import React from 'react';
+
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import profileImage from '../assets/image/img.jpeg'; // Remplacez par le chemin correct de votre image
+import profileImage from '../assets/image/img.jpeg'; 
+
+import bgImage from '../assets/image/bgimage.jpg'
 
 const Profile = () => {
   return (
     <section className="relative py-90 h-screen flex items-center justify-center pt-28">
       {/* Image de fond */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          objectFit: "cover",
-          clipPath: "polygon(0 0%, 100% 0, 100% 100%, 10% 49%)",
-        }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center">
+        <img
+          src={bgImage}
+          alt="Profil"
+          className="absolute inset-0 w-full h-full object-cover object-center  border-t-3  shadow-lg"
+          style={{
+             clipPath: "polygon(0 0%, 100% 0, 100% 100%, 10% 49%)", // Effet de rogner le haut
+          }}
+        />
+      </div>
 
       {/* Conteneur principal */}
       <div className="relative z-10 flex flex-col  md:flex-row w-full max-w-7xl h-90  bg-blue-900 backdrop-blur-md  bg-opacity-10 shadow-lg rounded-lg overflow-hidden">

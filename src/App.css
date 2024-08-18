@@ -62,11 +62,6 @@ body {
   }
   
 
-  .bg-night-blue {
-    background-image: url('https://img.freepik.com/free-photo/autumn-leaves-composition_23-2151555014.jpg?t=st=1722457751~exp=1722461351~hmac=3115ff923e3aeac3c4a657808de35cff7ad1d00364f2412dd72591657847408b&w=1380');
-    background-size: cover;
-    background-position: center;
-  }
   /* Ajout de styles personnalisés pour la navbar */
 .navbar {
     display: flex;
