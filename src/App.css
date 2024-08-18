@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 /* Import Poppins Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
@@ -94,7 +96,7 @@ body {
   }
   
   .animated-background {
-    background: linear-gradient(270deg, #e3a01a, #041f3d, #000e1e);
+    background: linear-gradient(270deg, #ffffff, #ffffff, #ffffff);
     background-size: 600% 600%;
     animation: gradientBackground 8s ease infinite;
   }
@@ -122,8 +124,8 @@ body {
   margin-bottom: 16px;
 }
 
-.bg-gradient-to-r {
-  background: linear-gradient(to right, #6ee7b7, #3b82f6);
+.bg-gradient-to-t {
+  background: linear-gradient(to right, #f8fafa, #d8a312);
 }
 
 .container {
@@ -171,4 +173,6 @@ h1, h2, h3 {
 .rounded-lg {
   border-radius: 0.5rem; /* Coins arrondis */
 }
-
+.bg-cv{
+  background-color: #041f3d;
+}

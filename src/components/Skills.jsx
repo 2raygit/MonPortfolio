@@ -27,14 +27,14 @@ const Skills = () => {
   return (
     <section id="skills" className="py-16 animated-background">
       <div className="container mx-auto px-8">
-        <h2 className="text-4xl font-extrabold text-white mb-8 text-center">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8">
+        <h2 className="text-4xl font-extrabold text-yellow-500 mb-8 text-center">Skills</h2>
+        <div className="grid  w-100  grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8">
           {skillsData.map(skill => (
-            <div key={skill.id} className="bg-white shadow-lg  bg-opacity-5 rounded-lg p-6 flex flex-col items-center text-center">
-              <div className="mb-3">
+            <div key={skill.id} className="bg-white shadow-2xl   rounded-lg p-6 flex flex-col items-center text-center">
+              <div className="mb-2">
                 {skill.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">{skill.name}</h3>
+            
             </div>
           ))}
         </div>

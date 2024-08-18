@@ -1,55 +1,132 @@
 import React from 'react';
-import backgroundImage from '../assets/image/image.jpg';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import profileImage from '../assets/image/img.jpeg'; // Remplacez par le chemin correct de votre image
 
 const Profile = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center bg-night-blue p-4">
+    <section className="relative py-90 h-screen flex items-center justify-center pt-28">
+      {/* Image de fond */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          objectFit: "cover",
+          clipPath: "polygon(0 0%, 100% 0, 100% 100%, 10% 49%)",
+        }}
+      ></div>
+
       {/* Conteneur principal */}
-      <div className="relative flex flex-col md:flex-row w-full max-w-7xl h-500 bg-white bg-opacity-80 shadow-lg rounded-lg overflow-hidden">
-        {/* Section avec l'image de fond */}
-        <div
-          className="relative flex-1 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            padding: '100px 1px 200px 1px',
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white transform -skew-x-12 origin-bottom-right"></div>
-          <div className="relative flex items-center justify-center h-full p-8">
-            <div className="flex flex-col items-center">
-              <a
-                href="/assets/cv.pdf" // Assurez-vous que le chemin est correct
-                download // Ajoutez l'attribut download pour forcer le téléchargement
-                className="btn btn-primary justify-center ripple-btn mt-4"
-              >
-                Télécharger mon CV
-              </a>
+      <div className="relative z-10 flex flex-col  md:flex-row w-full max-w-7xl h-90  bg-blue-900 backdrop-blur-md  bg-opacity-10 shadow-lg rounded-lg overflow-hidden">
+        {/* Section avec le texte */}
+        <div className="relative flex-1 flex items-center justify-center p-8">
+          <div className="flex flex-col justify-center items-start py-3 px-4">
+            <h2
+              className="text-md  md:text-md py-2  leading-3 opacity-80  text-yellow-600 "
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                background: "linear-gradient(to right,  white,white )",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              DEV Full-Stack & Designer Ux Ui
+            </h2>
+            <h1
+              className="text-4xl md:text-4xl  text-gray-400 "
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                background: "linear-gradient(to right, white,orange)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Hello je suis ,
+            </h1>
+            <h1
+              className="text-4xl md:text-5xl font-extrabold text-gray-400 mb-2"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                background: "linear-gradient(to right,white, white)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Cheikhou Toure
+            </h1>
+
+            <p
+              className="text-lg md:text-md text-gray-400/90 mb-5"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                background: "linear-gradient(to right,  gray, white)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Je suis passionné par le développement web et la création de
+              solutions innovantes.
+            </p>
+            <div className="flex items-center">
+              <section className="p-4">
+                <a
+                  href="/assets/cv-cheikhou-touré.pdf"
+                  download
+                  className="inline-block bg-yellow-600 text-white  mt-5 px-4 py-2 rounded-full shadow-2xl hover:bg-blue-700 transition duration-300 mb-6"
+                >
+                  Télécharger mon CV
+                </a>
+              </section>
+              <section className=" p-4 ml-auto">
+                <div className="flex space-x-4">
+                  <a
+                    href="https://github.com/votre-profil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-800 hover:text-blue-800"
+                  >
+                    <FaGithub size={40} />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/votre-profil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-800 hover:text-blue-800"
+                  >
+                    <FaLinkedin size={40} />
+                  </a>
+                  <a
+                    href="https://twitter.com/votre-profil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-800 hover:text-blue-800"
+                  >
+                    <FaTwitter size={40} />
+                  </a>
+                  <a
+                    href="mailto:cheikhou.toure@example.com"
+                    className="text-blue-800 hover:text-blue-800"
+                  >
+                    <FaEnvelope size={40} />
+                  </a>
+                </div>
+              </section>
             </div>
           </div>
         </div>
-
-        {/* Section avec le texte */}
-        <div className="relative flex-1 bg-white p-8 flex flex-col justify-center">
-          <h1
-            className="text-4xl md:text-5xl  font-extrabold text-gray-800 mb-2"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
-          >
-            Cheikhou TOURE
-          </h1>
-          <h2
-            className="text-2xl md:text-4xl font-extrabold text-gray-600 mb-4"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
-          >
-            Développeur Web & Designer UX/UI
-          </h2>
-          <p
-            className="text-sm md:text-base text-gray-600"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
-          >
-            Je suis un développeur web et designer UX/UI avec une passion pour créer des expériences utilisateur intuitives et esthétiques.
-          </p>
+        {/* Section avec l'image de profil */}
+        <div className="relative flex-1 flex items-center  justify-center p-8">
+          <img
+            src={profileImage}
+            alt="Cheikhou TOURE"
+            className="w-2/3 rounded-full border-t-3 opacity-90 shadow-lg"
+            style={{
+              objectFit: "cover",
+              clipPath: "polygon(0 0%, 100% 0, 100% 100%, 0 100%)", // Effet de rogner le haut
+            }}
+          />
         </div>
       </div>
     </section>

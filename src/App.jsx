@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import UXUIProjects from './components/UxUiProjects';
 import WebProjects from './components/WebProjects';
 import SliderSection from './components/SliderSection';
+import Contact from './components/Contact';
 import CV from './components/Cv'; // Assurez-vous que l'import est correct
 import './App.css';
 
@@ -17,20 +18,26 @@ const App = () => {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={
-              <>
-                <Profile />
-                <SliderSection />
-                <Projects />
-                <Skills />
-              </>
-            } />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Profile />
+                  <SliderSection />
+                  <Projects />
+
+                  <Skills />
+                </>
+              }
+            />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/webprojet" element={<WebProjects/>} />
-            <Route path="/uxuiprojet" element={<UXUIProjects/>} />
+            <Route path="/webprojet" element={<WebProjects />} />
+            <Route path="/uxuiprojet" element={<UXUIProjects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/cv" element={<CV />} />
+            <Route path="/contact" element={<Contact />} />
+            
           </Routes>
         </main>
         <Footer />
