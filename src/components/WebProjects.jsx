@@ -67,7 +67,7 @@ const WebProjects = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-t from-orange-200 via-orange-800 ">
+    <section className="py-20 bg-gradient-to-t from-orange-300 via-orange-700 ">
       <div className="container mx-auto px-4">
         <Link to="/" className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-blue-700 inline-flex items-center">
           Retour à l'accueil
