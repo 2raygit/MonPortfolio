@@ -73,7 +73,7 @@ const WebProjects = () => {
       <div className="container mx-auto px-4">
         <Link
           to="/"
-          className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-blue-700 inline-flex items-center"
+          className="px-4 py-2 text-white bg-yellow-500 mt-10 rounded hover:bg-blue-700 inline-flex items-center"
         >
           Retour à l'accueil
         </Link>

@@ -27,7 +27,7 @@ const UXUIProjects = () => {
       <div className="container mx-auto px-4">
         <Link
           to="/"
-          className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700 inline-flex items-center"
+          className="px-4 py-2 mt-10 text-white bg-blue-500 rounded hover:bg-blue-700 inline-flex items-center"
         >
           Retour à l'accueil
         </Link>
