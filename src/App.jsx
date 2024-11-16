@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Art from './components/Art';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
@@ -30,6 +31,7 @@ const App = () => {
                 </>
               }
             />
+            <Route path="/art" element={<Art/>} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/webprojet" element={<WebProjects />} />
@@ -37,7 +39,6 @@ const App = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/contact" element={<Contact />} />
-            
           </Routes>
         </main>
         <Footer />

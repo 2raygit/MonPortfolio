@@ -33,7 +33,7 @@ const Profile = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              DEV Full-Stack & Designer Ux Ui
+             Artiste peintre & Artiste vfx & filmaker & DEV Full-Stack & Designer Ux Ui
             </h2>
             <h1
               className="text-4xl md:text-4xl  text-gray-400 "
@@ -67,7 +67,7 @@ const Profile = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Je suis passionné par le développement web et la création de
+              Je suis passionné par l'art , le cinema , l'animation 3d et vfx ,  le développement web , l'ux ui   et la création de
               solutions innovantes.
             </p>
             <div className="flex items-center">

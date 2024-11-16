@@ -9,6 +9,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-center space-x-4">
         <Link
+          to="/art"
+          className="text-white px-3 py-2 hover:bg-yellow-500 rounded"
+        >
+          ART
+        </Link>
+        <Link
           to="/webprojet"
           className="text-white px-3 py-2 hover:bg-yellow-500 rounded"
         >
